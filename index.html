@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best food online</title>
+    <style>
+        #navbar{
+            display: flex;
+            flex-flow: horizontal;
+
+        }
+        #navbar::before{
+            content:"";
+            background-color: rgb(161, 141, 141);
+            position: absolute;
+            height:20%;
+            width:100%;
+            z-index: -1;
+            opacity:2;
+
+
+        }
+        
+        
+       
+        ul{
+            display: flex;
+            flex-flow: horizontal;
+
+            
+            top : 0 ;
+            margin-left: 10%;
+            position: sticky;
+            list-style: none;
+        
+            
+
+            
+        
+            
+       
+            
+            
+            
+            
+            
+        }
+        #logo{
+            padding:10px 10px;
+
+        }
+        
+        #navbar ul li a{
+            margin: 20px 20px;
+            list-style: none;
+            color:black;
+        
+            
+            border-radius: 25px;
+            padding:10px 10px;
+            
+            text-decoration: none;
+            
+        }
+        #navbar ul li a:hover{
+            background-color: teal;
+        }
+        #home{
+            display:flex;
+            flex-direction: column;
+            height: 100% ;
+            
+            justify-content: center;
+            align-items: center;
+
+
+            
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            background: url('junk.jpg') no-repeat center center/cover;
+                   
+            height:90%;
+            width:100%;
+            z-index:-1;
+            opacity:0.8;
+        }
+        section h1{
+            color: white;
+            
+        }
+        .h-primary{
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+        section p{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        #btn{
+            
+            color:white;
+            border:5px solid red;
+            border-radius: 10px;
+            font-size: 2.1rem;
+            background-color:red;
+            cursor: pointer;
+
+        }
+        .h-primary_center{
+            
+            display:block;
+            margin:auto;
+            color: black;
+
+        }
+        .container{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top:600px;
+            
+        }
+        .box{
+            margin: 20px;
+            background-color: tan;
+            
+            height:400px;
+            border: 4px solid black;
+            border-radius: 20px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width:600px;
+            
+            
+        }
+        .container img{
+            height:200px;
+            margin: 35px;
+            
+            
+            
+        }
+        .container p {
+            text-align: center;
+            
+        }
+        .h-secondary{
+            display: block;
+        
+            margin : auto;
+        }
+        
+        .container h1{
+            color:black;
+        }
+        .services{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #client{
+            
+            width:100%;
+            height:60%;
+            position: absolute;
+            top:1100px;
+            display: flex;
+            flex-direction: column;
+            
+            
+
+        }
+        .clients{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #client::before{
+            content:"";
+        
+            background: url(food.jpg) no-repeat center center/cover;
+            position:absolute;
+            height:95%;
+            width:100%;
+            z-index:-1;
+            
+
+
+        }
+        .clientitem{
+        
+            
+            margin:20px;
+
+            
+            
+        }
+        .contact{
+            position: relative;
+            top: 1100px;
+            
+            height:500px;
+            
+            
+        }
+        
+        .contact::before{
+            content:"";
+            background:url("contact.jpg")no-repeat center center/cover;
+            position:absolute ;
+            height:100%;
+            width:100%;
+            z-index: -1;
+            opacity: 1;
+        }
+        .contact_box{
+            position: relative;
+            top: 400px;
+            left: 200px;
+
+        }
+        .contact_box label{
+            font-size: 3.2rem;
+        }
+        
+
+
+
+        
+
+        
+        
+        
+        
+
+        
+        
+        
+         
+       
+
+        
+        
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id = "logo">
+            <img src = "imageicon.png" alt="my food app">
+            
+
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">contact us</a></li>
+            <li class="item"><a href="#">get number</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to Online Meal 
+        </h1>
+        <p>
+             Fugiat totam provident eum error,  corrupti, mollitia in.
+
+        </p>
+        <button id="btn">order now</button>
+
+    </section>
+    <section class="container">
+        <h1 class="h-primary_center">Our services</h1>
+        <div class="services">
+            <div class="box">
+                <img src="download.jpg" alt="Here">
+                <h2 class="h-secondary">Food ordering</h2>
+                <p>  eaque exercitationem ipsam quam explicabo?</p>
+            </div>    
+            <div class="box">
+                    <img src="event-food.jpg" alt="Here">
+                    <h2 class="h-secondary">Food Catering</h2>
+                    <p>  eaque exercitationem ipsam quam explicabo?</p>
+            </div>        
+    
+                        
+                    
+         
+
+
+                    
+                
+  
+
+   
+    
+        </div>
+    </section>
+    <section id="client">
+        <h1 class="h-primary_center">Our Clients</h1>
+        <div class="clients">
+        <div class="clientitem">
+            <img src= "download(3).png" alt="hey">
+        </div>
+        <div class="clientitem">
+            <img src= "download(4).png" alt="hey">
+        </div>
+        
+        </div>
+
+        
+
+    </section>
+    <section class="contact">
+        
+        <div class="contact_box">
+            <form action="">
+                <div class="form_group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name",id="name" placeholder="Enter your name">
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    
+
+</body>
+</html>
